@@ -8,7 +8,7 @@ const phones = [
 ];
 
 function cheapestPhone(phones) {
-    const cheapest = phones[0];
+    let cheapest = phones[0];
     for (let i = 0; i < phones.length; i++){
         const phone = phones[i];
         if (phone.price < cheapest.price) {
@@ -16,7 +16,7 @@ function cheapestPhone(phones) {
              cheapest = phone
         }
     }
-    // return cheapest;
+    return cheapest;
 }
 
 const mySelection = cheapestPhone(phones);
